@@ -4,14 +4,18 @@
         <meta charset=utf-8>
         <title>ic3.systems</title>
         <style>
+            html {
+                height: 100vh;
+            }
             body {
+                height: 100vh;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
             p {
                 color: #ff0000;
-                animation: spin 10s infinite;
+                animation: spin 10s linear infinite;
             }
             @keyframes spin {
                 0%   {transform: rotate(0turn)}
