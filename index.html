@@ -4,6 +4,7 @@
         <meta charset=utf-8>
         <title>ic3.systems</title>
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
             html {
                 height: 100vh;
             }
@@ -14,7 +15,11 @@
                 justify-content: center;
             }
             p {
-                color: #ff0000;
+                font-family: "Archivo Black", sans-serif;
+                font-size: 10vh;
+                color: transparent;
+                background: linear-gradient(to right, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142));
+                background-clip: text;
                 animation: spin 10s linear infinite;
             }
             @keyframes spin {
@@ -27,3 +32,4 @@
         <p>HELLO</p>
     </body>
 </html>
+
