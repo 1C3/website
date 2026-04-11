@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Share Tech", sans-serif;
+}
+:root {
+    --scroll: 0;
+    --base-size: calc(10px + 0.5vh + 0.5vw);
+    --title-size: calc(20px + 2vh + 2vw);
+}
+html {
+    min-height: 100vh;
+}
+body {
+    min-height: 100vh;
+    background-color: white;
+}
+body > banner {
+    position: absolute;
+    z-index: +1;
+    width: 100vw;
+    height: calc(var(--title-size) * 2.95);
+    background-color: black;
+}
+body > banner::after {
+  content: '';
+  position: absolute;
+  bottom: calc(var(--title-size) * -0.4);
+  right: 0vw;
+  width: 80vw;
+  height: calc(var(--title-size) * 0.2);
+  background-color: grey;
+  transform: skew(45deg) translate(1vw);
+}
+body > banner > h1 {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+
+    font-family: "Tomorrow", sans-serif;
+    font-size: calc(var(--title-size) * 1.35);
+    line-height: calc(var(--title-size) * 0.88);
+    text-indent: calc(var(--title-size) * -0.06);
+    letter-spacing: calc(var(--title-size) * 0.1);
+    color: white;
+}
+h1:hover {
+    cursor: pointer;
+}
+body > main {
+    width: calc(160px + 40vw);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-top: calc(var(--title-size) * 5);
+    box-sizing: border-box;
+}
+body > main > a {
+    color: rgb(255, 255, 255);
+    font-size: calc(var(--base-size) * 2);
+    margin-bottom: calc(var(--title-size) * 0.5);
+}
