@@ -12,7 +12,7 @@ printf '%s' "$CADDYFILE" > $CADDY_CONFIG
 caddy fmt --overwrite $CADDY_CONFIG
 caddy reload --config $CADDY_CONFIG
 
-cp -r root/* $DEPLOY_DIR
+cp -r atmtc.eu/* $DEPLOY_DIR
 
 chown $CADDY_USER -R $DEPLOY_DIR
 find $DEPLOY_DIR -type d -exec chmod 775 {} \;
