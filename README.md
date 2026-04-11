@@ -1,7 +1,7 @@
 ### personal website
 atmtc.eu
 
-#### setup:
+#### example setup for ubunut/debian:
 ```
 apt install caddy
 systemctl enable --now caddy
