@@ -1,6 +1,1 @@
-#### example setup for ubuntu/debian:
-```
-apt install caddy
-systemctl enable --now caddy
-deploy.sh
-```
+#### per deploy tramite https://github.com/atmtck/k8s-cluster-v3/blob/main/yaml/20-website.yaml
